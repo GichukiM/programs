@@ -1,0 +1,176 @@
+* {
+ padding: 0;
+ box-sizing: border-box;
+ list-style: none;
+ margin: 0;
+ outline: 0;
+ border: 0;
+ scroll-behavior: smooth;
+}
+
+:root {
+ /* primary/main color */
+ --body-color: #ffff;
+
+ /* darkest grey - used for headings */
+ --heading-color: #002339;
+
+ /* grey used for paragraphs */
+ --p-color: #002339;
+ --link-color: #000000;
+
+ /* other colors */
+ --add-color: #F40009;
+ --add-color-2: rgba(255, 166, 0, 0.357);
+}
+
+body {
+ line-height: 1.5;
+ font-size: 0.875rem;
+ width: 100%;
+ height: 100vh;
+ align-items: center;
+ overflow-x: hidden;
+}
+
+ul {
+ list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+ line-height: 1.25;
+}
+
+h1 {
+ color: var(--add-color);
+ text-transform: uppercase;
+}
+
+h2 {
+ font-size: 1rem;
+}
+
+h3 {
+ font-size: 1.25rem;
+}
+
+h4 {
+ font-size: 0.875rem;
+}
+
+p {
+ color: var(--p-color);
+}
+
+i {
+ color: var(--p-color);
+ cursor: pointer;
+}
+
+a {
+ text-decoration: none;
+ color: var(--body-color);
+}
+
+.programmes {
+ margin: 30px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+}
+
+.programs {
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: var(--heading-color);
+  color: var(--body-color);
+  transform: translateX(400%);
+  transition: transform 0.4s ease;
+}
+
+#prog-right{
+ border-top-right-radius: 150px;
+ text-overflow: clip;
+ overflow: hidden;
+}
+
+#prog-left {
+ border-top-left-radius: 150px;
+ text-overflow: clip;
+ overflow: hidden;
+}
+
+.programs img {
+ height: 100%;
+ max-height: 100vh;
+ width: 100%;
+ overflow: hidden;
+}
+
+.prog-cont {
+ text-align: center;
+ padding: 20px;
+ width: 100%;
+ height: 100%;
+}
+
+.prog-cont h2 {
+ text-transform: uppercase;
+color: var(--add-color);
+padding-bottom: 0px;
+font-size: 1.3rem;
+}
+
+.prog-cont h6{
+ text-transform: uppercase;
+  color: var(--add-color);
+  padding-bottom: 0px;
+  font-size: 1.3rem;
+}
+
+.prog-cont li span {
+ text-transform: uppercase;
+ font-weight: bold;
+}
+
+.prog-cont li{
+ list-style: none;
+ color: var(--body-color);
+ text-align: left;
+ padding-bottom: 10px;
+  font-size: 1rem;
+
+}
+
+.programs button {
+ width: 80%;
+ padding: 10px;
+ text-transform: capitalize;
+ font-size: 1.5rem;
+ cursor: pointer;
+ font-weight: 700;
+ color: var(--body-color);
+ background-color: var(--add-color);
+}
+
+.programs button:hover {
+ color: var(--body-color);
+ background-color: var(--link-color);
+}
+
+.programs:nth-of-type(even) {
+ transform: translate(-400%);
+}
+
+.programs.show{
+ transform: translateX(0);
+}
