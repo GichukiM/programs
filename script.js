@@ -1,9 +1,9 @@
 
 ScrollReveal({
       reset: true,
-      distance: '60px',
+      distance: '100px',
       duration: 2000,
-      delay: 400
+      delay: 300
     });
 
     ScrollReveal().reveal('.programs .prog-img-left, .prog-img-right', { delay: 300, origin: 'top' });
