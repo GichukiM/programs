@@ -93,6 +93,7 @@ a {
   border-radius: 5px;
   background-color: var(--heading-color);
   color: var(--body-color);
+  box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 0.1);
 }
 
 #prog-right{
@@ -183,6 +184,14 @@ font-size: 1.3rem;
 }
 
 @media (max-width: 426px) {
+.programmes{
+  margin: 0px;
+}
+
+.programs{
+  width: 95%;
+}
+
   .prog-cont h2 {
 font-size: 1rem;
 }
