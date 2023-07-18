@@ -93,8 +93,6 @@ a {
   border-radius: 5px;
   background-color: var(--heading-color);
   color: var(--body-color);
-  transform: translateX(400%);
-  transition: transform 0.4s ease;
 }
 
 #prog-right{
@@ -114,6 +112,7 @@ a {
  max-height: 120vh;
  width: 100%;
  overflow: hidden;
+ object-fit: cover;
 }
 
 .prog-cont {
@@ -167,15 +166,11 @@ font-size: 1.3rem;
  background-color: var(--link-color);
 }
 
-.programs:nth-of-type(even) {
- transform: translate(-400%);
-}
-
-.programs.show{
- transform: translateX(0);
-}
-
 @media (max-width: 769px) {
+  .programmes{
+    margin: 10px;
+  }
+
   #prog-right {
     display: flex;
     flex-direction: column-reverse;
