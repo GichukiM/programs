@@ -111,7 +111,7 @@ a {
 
 .programs img {
  height: 100%;
- max-height: 100vh;
+ max-height: 120vh;
  width: 100%;
  overflow: hidden;
 }
@@ -173,4 +173,45 @@ font-size: 1.3rem;
 
 .programs.show{
  transform: translateX(0);
+}
+
+@media (max-width: 769px) {
+  #prog-right {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #prog-left {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 426px) {
+  .prog-cont h2 {
+font-size: 1rem;
+}
+
+.prog-cont h6 {
+  font-size: 1rem;
+}
+
+.prog-cont li span {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.programs button{
+  font-size: 1rem;
+  width: 100%;
+  padding: 10px 5px;
+}
+
+#prog-right{
+  border-top-right-radius: 75px;
+}
+
+#prog-left {
+  border-top-left-radius: 75px;
+}
 }
